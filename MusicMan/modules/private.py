@@ -39,17 +39,13 @@ logging.basicConfig(level=logging.INFO)
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>┗┓ Haii {message.from_user.first_name} saya adalah {PROJECT_NAME} ┏┛\n
-Saya Bot Music Group, Yang dapat Memutar Lagu di Voice Chat Group Dengan cara yang Mudah
-Saya Memiliki Banyak Fitur Praktis Seperti :
-┏━━━━━━━━━━━━━━
-┣• Memutar Musik.
-┣• Mendownload Lagu.
-┣• Mencari Lagu Yang ingin di Putar atau di Download.
-┣• Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
-┗━━━━━━━━━━━━━━
-❃ Managed With ❤ By {OWNER}
-❃ Thanks To [Risman](https://t.me/mrismanaziz)
+        f"""<b>👋 Haii {message.from_user.first_name} saya adalah {PROJECT_NAME}\n
+Saya Bot Music Group, Yang dapat Memutar Lagu di Voice Chat Group.
+
+• Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
+━━━━━━━━━━━━━━
+❃ Managed With By [Owner](https://t.me/Xcimers)
+❃ Thanks To [GroupSupport](https://t.me/CariTemanSntuy)
 ━━━━━━━━━━━━━━━
 Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
 </b>""",
@@ -66,10 +62,10 @@ Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
                     InlineKeyboardButton(
                         "💬 Channel Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "⛑ Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "📮 Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                        "Developer", url=f"https://t.me/Xcimers")
                 ]
             ]
         ),
@@ -120,12 +116,12 @@ def map(pos):
                     url=f"https://t.me/{UPDATES_CHANNEL}",
                 ),
                 InlineKeyboardButton(
-                    text='⛑ Group Support', url=f"https://t.me/{SUPPORT_GROUP}"
+                    text='📮 Group Support', url=f"https://t.me/{SUPPORT_GROUP}"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text='🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}"
+                    text='Developer', url=f"https://t.me/Xcimers"
                 )
             ],
             [InlineKeyboardButton(text='«', callback_data=f"help+{pos-1}")],
@@ -171,7 +167,7 @@ async def ghelp(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "📜 Cara Menggunakan BOT 📜", url=f"https://t.me/{BOT_USERNAME}?start"
+                        "📜 Cara Menggunakan BOT 📜", url=f"https://t.me/BeKing_Bots/9"
                     )
                 ]
             ]
